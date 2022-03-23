@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     SettingsProviderM2012K11AG \
     SettingsProviderM2012K11AI
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
