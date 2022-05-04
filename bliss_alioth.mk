@@ -8,29 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelPlusUI stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-WITH_GAPPS := true
+# Inherit some common Blissrom stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1440
-
-# PixelPlusUI Official Stuff
-CUSTOM_BUILD_TYPE := OFFICIAL
-
-# PixelPlusUI Maintainer Flags
-PPUI_MAINTAINER := johnmart19
-
-# Supported Device Flags
-IS_PHONE := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP  := true
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
-PRODUCT_NAME := aosp_alioth
+PRODUCT_NAME := bliss_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
