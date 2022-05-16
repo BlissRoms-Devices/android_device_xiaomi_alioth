@@ -52,9 +52,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Inherit Gcam BSG
+# Inherit Gcam BSG for GApps builds, otherwise install GrapheneOS Camera
 ifeq ($(BLISS_BUILD_VARIANT), gapps)
 $(call inherit-product, vendor/GcamBSG/GcamBSG-vendor.mk)   
+else
+PRODUCT_PACKAGES += Camera
 endif
 
 # Inherit from vendor blobs
