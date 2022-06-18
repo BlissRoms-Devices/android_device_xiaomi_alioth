@@ -61,3 +61,6 @@ endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+
+# Inherit firmware
+$(call inherit-product, vendor/xiaomi-firmware/alioth/BoardConfigVendor.mk)
