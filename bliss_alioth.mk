@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Blissrom stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1080	
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from alioth device
