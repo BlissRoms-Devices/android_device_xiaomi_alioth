@@ -54,7 +54,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit Gcam BSG for GApps builds, otherwise install GrapheneOS Camera
 ifeq ($(BLISS_BUILD_VARIANT), gapps)
-$(call inherit-product, vendor/GcamBSG/GcamBSG-vendor.mk)
+$(call inherit-product, vendor/GoogleCamera/config.mk)
 else
 PRODUCT_PACKAGES += Camera
 endif
