@@ -11,7 +11,7 @@ echo ""
 
 # Kernel
 echo "cloning kernel and clang"
-git clone https://github.com/NextWork123/nexus_kernel_xiaomi_sm8250 kernel/xiaomi/alioth
+git clone https://github.com/NextWork123/nexus_kernel_xiaomi_sm8250 -b staging kernel/xiaomi/alioth
 git clone --depth=1 https://gitlab.com/Roxor-007/WeebX_clang16.git prebuilts/clang/host/linux-x86/clang-WeebX
 echo ""
 
